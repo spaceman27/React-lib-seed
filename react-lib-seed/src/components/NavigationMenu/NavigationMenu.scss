@@ -1,0 +1,51 @@
+@import "../../theme/ams-style.scss";
+
+
+.slideRight {
+    transition: transform .4s;
+    transform: translate3d(28vw, 0, 0);
+    overflow: hidden;
+}
+
+
+.overlay {
+    position: fixed; 
+    display: none;
+    width: 100vw; 
+    height: 100vh; 
+    top: 0; 
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+}
+
+.overlay.show {
+    display: block;
+}
+
+.menuBox {
+    margin-right: 3em;
+    margin-left: auto;
+}
+
+.dropdown-toggle {
+    cursor: pointer;
+    color: $titleColor;
+    margin-right: 2em;
+    &::after {
+        content: none;
+    }
+    :hover {
+        color: $ams-btnup-hover-color;
+    }
+}
+
+.userDropdown {
+    margin-right: 20em;
+}
+
+.logoutbutton {
+    cursor: pointer;
+}

@@ -1,0 +1,65 @@
+@import "../../theme/ams-style.scss";
+
+.slideoutIcon {
+    :hover {
+        box-shadow: 3px 2px $downColor;
+        background-color: $downColor;
+        transition: background-color .5s;
+        transition: box-shadow .5s;
+    }
+    font-size: 1.4em;
+    text-align: center;
+    z-index: 2;
+}
+
+.slideoutMenu {
+    width: 30vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: transform .5s;
+    overflow: auto;
+    z-index: 1000;
+}
+
+.slideoutMenu.hiddenMenu {
+    transform: translate3d(-100vw, 0, 0);
+}
+
+.searchBox {
+    background-color: darkgray;
+}
+
+.slideoutMenu.shownMenu {
+    transform: translate3d(0vw, 0, 0);
+    overflow: hidden;
+}
+
+.pull-right {
+    text-align: right;
+    font-size: 2em;
+}
+
+.closeIcon {
+    color: rgb(180, 86, 86);
+}
+
+.icon {
+    height: 4em;
+    text-align: center;
+    padding-left: 2em;
+    .iconFA {
+        font-size: 3em;
+        :hover {
+            box-shadow: 3px 2px $downColor;
+            background-color: $downColor;
+            transition: background-color .5s;
+            transition: box-shadow .5s;
+        }
+    }
+}
+
+.insideApp {
+    min-height: 40vh;
+}

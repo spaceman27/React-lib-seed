@@ -1,0 +1,18 @@
+@import "../../theme/ams-style.scss";
+$ams-color-btn: #449D44;
+$ams-color-btn-hover: #1BD109;
+$ams-color-btn-disabled: #288146;
+:global(.k-button) {
+    &.btn-add-ams {
+        color: white;
+        background-color: $ams-color-btn;
+        &:hover {
+            background-color: $ams-color-btn-hover !important;
+            background-image: none;
+        }
+        &:disabled {
+            background-color: $ams-color-btn-disabled !important;
+        }
+        background-image: none;
+    }
+}

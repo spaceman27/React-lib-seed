@@ -1,0 +1,61 @@
+$boxBackground: #555555;
+$formBackground: #343434;
+$upColor: #222222;
+$downColor: black;
+
+$titleColor: #F7921E;
+$screenTitleFontSize: 24pt;
+$controlLabelFontSize: 20pt;
+$messageBoxTitleSize: 16pt;
+$bodyTextSize: 18pt;
+
+$ams-btnup-color: #0093D9;
+$ams-btnup-hover-color: #00B8F1;
+$ams-btndown-color: #0078BF;
+$ams-focus-color: #FFC90E;
+
+.ams-navbar {
+    background-color: $boxBackground;
+    color: white;
+    z-index: 2;
+}
+
+.ams-window {
+    background-color: $boxBackground;
+    .title {
+        color: $titleColor;
+        font-size: $messageBoxTitleSize;
+    }
+}
+
+.title {
+    font-size: $controlLabelFontSize;
+    color: $titleColor;
+}
+
+.shell-container {
+    margin-left: 20px;
+}
+
+.btn-minus-ams {
+    color: white;
+    background-color: #F26F1F;
+    &:disabled {
+        background-color: #834d14 !important;
+    }
+}
+
+.btn-delete-ams {
+    color: white;
+    background-color: #C51C21;
+}
+
+.ams_selected {
+    outline: 2px solid $ams-focus-color;
+}
+
+.ams_focus {
+    &:focus {
+        @extend .ams_selected;
+    }
+}

@@ -1,0 +1,19 @@
+@import "../../theme/ams-style.scss";
+
+$ams-color-btn: #c51c21;
+$ams-color-btn-hover: #FB0A12;
+$ams-color-btn-disabled: #AF2126;
+:global(.k-button) {
+    &.btn-delete-ams {
+        color: white;
+        background-color: $ams-color-btn;
+        &:hover {
+            background-color: $ams-color-btn-hover !important;
+            background-image: none;
+        }
+        &:disabled {
+            background-color: $ams-color-btn-disabled !important;
+        }
+        background-image: none;
+    }
+}

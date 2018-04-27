@@ -1,0 +1,3 @@
+machine kendo.git.progress.com
+   login my-progress.identity@example.com
+   password mysecret
