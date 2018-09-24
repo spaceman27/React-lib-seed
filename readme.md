@@ -1,6 +1,6 @@
 ### HOW TO USE
 
-- react-lib-seed: basic need for reusable component library which can reuse in any js framework like angular, react, vue
+- react-lib-seed: basic need for reusable component library
 - angular-poc: for testing purpose, to consume react component library
 
 ### react-lib-seed
